@@ -28,7 +28,10 @@ largoLista=len(lista)
 largoLista2=len(lista2)
 print(largoLista,largoLista2)
 
-# print(lista2)
+print(lista2)
 
-# lista.clear()
-# print(lista)
+lista.clear()
+print(lista)
+
+listaNueva= ['hola','mundo',3]
+print(listaNueva[1])
