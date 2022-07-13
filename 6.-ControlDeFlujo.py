@@ -30,3 +30,16 @@ elif 5<5:
   print('2 menor a 5 en elif')
 else:
   print('yo me imprimo solo si todo lo anterior evalua en falso')  
+
+
+if 2 > 5 : print('if de una linea')
+
+
+print('Cuando devuelve true') if 5 > 2 else print('Cuando devuelve false')
+
+# evaluando mas de una misma condicion
+if 2<5 and 3>2:
+  print('ambas devuelven True')
+
+if 1<0 or 1>0:
+  print('Una de las dos condiciones devolvió True')
