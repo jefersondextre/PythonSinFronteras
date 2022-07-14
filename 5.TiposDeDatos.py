@@ -34,4 +34,8 @@ lista.clear()
 print(lista)
 
 listaNueva= ['hola','mundo',3]
+print(listaNueva[0])
 print(listaNueva[1])
+
+# Eliminando elementos de una lista
+
