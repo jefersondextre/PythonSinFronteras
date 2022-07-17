@@ -9,17 +9,27 @@ midb=mysql.connector.connect(
   database='prueba'
 )
 
+
 # Un cursor es un objeto que nos permite interactuar con la base de datos mediante sql
 cursor=midb.cursor()
 
+sql='insert into Usuario (email,username,edad) values(%s,%s,%s)'
+values=('miCorreo@outlook.com','nombreUsuario',35)
 
-cursor.execute('select * from Usuario')
+cursor.execute(sql,values)
+# cursor.execute('select * from Usuario')
+# cursor.execute('show create table Usuario')
 
+# Comprometiendo los cambios
+# Tomara los datos en execute y ejecutar la consulta sql directamente con la base de datos
+midb.commit()
+# Llamamos ahora a rowcount
+print(cursor.rowcount)
 
 # ----- fetchall vs fetchone --------
-resultado = cursor.fetchall()
+# resultado = cursor.fetchall()
 # fetchall devuelve todos los registros encontrados
 # resultado = cursor.fetchone()
 # fetchone devuelve solo el primer registro encontrado
 
-print(resultado)
+# print(resultado)
