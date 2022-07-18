@@ -2,21 +2,21 @@ import mysql.connector
 # importamos el paquete mysql.connector
 
 # Creamos una instancia del paquete con el metodo connect con sus parametros requeridos
-midb=mysql.connector.connect(
-  host='localhost',
-  user='root',
-  password='123456',
-  database='prueba'
+midb = mysql.connector.connect(
+    host='localhost',
+    user='root',
+    password='123456',
+    database='prueba'
 )
 
 
 # Un cursor es un objeto que nos permite interactuar con la base de datos mediante sql
-cursor=midb.cursor()
+cursor = midb.cursor()
 
-sql='insert into Usuario (email,username,edad) values(%s,%s,%s)'
-values=('miCorreo@outlook.com','nombreUsuario',35)
+sql = 'insert into Usuario (email,username,edad) values(%s,%s,%s)'
+values = ('miCorreo@outlook.com', 'nombreUsuario', 35)
 
-cursor.execute(sql,values)
+cursor.execute(sql, values)
 # cursor.execute('select * from Usuario')
 # cursor.execute('show create table Usuario')
 
