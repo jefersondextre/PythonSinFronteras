@@ -12,4 +12,3 @@ saludo('Jeferson')
 
 # PIP es un administrador de paquetes instalados en Python, permitiendonos instalar modulos, listar , agregar, eliminar modulos
 
-pypi.org
