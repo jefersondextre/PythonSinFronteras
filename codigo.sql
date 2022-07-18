@@ -20,7 +20,7 @@ alter table Usuario modify column email varchar(50);
 insert into Usuario(email, username) values('jeferson@gmail.com','jadex');
 insert into Usuario(email, username) values('antonio dextre@yahoo.com','antonio');
 insert into Usuario(email, username) values('Rotomartillo_electric@gmail.com','Rotomartillo');
-insert into Usuario(email,username)values('jadex@yahoo.es','asdfasd#414');
+insert into Usuario(email,username) values('jadex@yahoo.es','asdfasd#414');
 insert into Usuario(email,username) values('admin','pohoit54#');
 
 -- Eliminando el primer registro insertado

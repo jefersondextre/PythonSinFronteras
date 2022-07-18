@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <style>
+
+    fieldset{
+      display: grid;
+      grid-template-columns: 100%;
+      gap:1em;
+      
+    }
+    
+      label > input{
+        position:relative;
+        margin-left: 25px;
+        padding: 3px;
+        /* margin-top:1px; */
+        /* width: 100%; */
+      }
+      .email{
+        margin-left: 36px;
+      }
+ 
+  </style>
+</head>
+<body>
+  <p>Por favor llene este formulario para ponerse en contacto con nosotros</p>
+
+  <form action="contacto.html">
+    <fieldset>
+      <legend> Datos de contacto</legend>
+      <section>
+        <label for="">
+          Nombre: 
+          <input type="text">
+        </label>
+      </section>
+      <section>
+        <label for="">Apellido:
+          <input type="text">
+        </label>
+
+      </section>
+      <section>
+        <label for="" >Correo:
+          <input type="email" class="email" name="" id="">
+        </label>
+
+      </section>
+      <section>
+        <label for="">Comentarios:
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </label>
+
+      </section>
+      <input type="button" value="Aceptar">
+
+    </fieldset>
+
+
+  </form>
+  
+</body>
+</html>
