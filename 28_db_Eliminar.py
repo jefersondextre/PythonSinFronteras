@@ -13,12 +13,13 @@ midb = mysql.connector.connect(
 # Un cursor es un objeto que nos permite interactuar con la base de datos mediante sql
 cursor = midb.cursor()
 
-sql = 'insert into Usuario (email,username,edad) values(%s,%s,%s)'
-values = ('andex2020@outlook.com', 'toñito', 62)
+# sql = 'insert into Usuario (email,username,edad) values(%s,%s,%s)'
+# values = ('andex2020@outlook.com', 'toñito', 62)
 
+# ELIMINAR DATOS
+sql= "DELETE FROM Usuario WHERE id= %s"
+values = (12, )
 cursor.execute(sql, values)
-# cursor.execute('select * from Usuario')
-# cursor.execute('show create table Usuario')
 
 # Comprometiendo los cambios
 # Tomara los datos en execute y ejecutar la consulta sql directamente con la base de datos
