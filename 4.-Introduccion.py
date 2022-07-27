@@ -37,6 +37,6 @@ variable = A = B = C = 'otro'
 print(variable, A, C)
 
 # Concatenacion
-inicio = 'Hola '
+inicio = 'Hola'
 final = 'mundo'
 print(inicio + final)

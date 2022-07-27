@@ -14,7 +14,7 @@ midb = mysql.connector.connect(
 cursor = midb.cursor()
 
 sql = 'insert into Usuario (email,username,edad) values(%s,%s,%s)'
-values = ('miCorreo@outlook.com', 'nombreUsuario', 35)
+values = ('andex2020@outlook.com', 'toñito', 62)
 
 cursor.execute(sql, values)
 # cursor.execute('select * from Usuario')
